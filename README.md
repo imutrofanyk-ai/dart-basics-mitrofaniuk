@@ -64,3 +64,67 @@ dart analyze
 ## Скріншоти
 
 Скріншоти виконання програм знаходяться в папці `screenshots/`.
+
+## UML-діаграма (завдання 3)
+
+```mermaid
+classDiagram
+    class Person {
+        +String id
+        -String _name
+        -int _age
+        +String name
+        +int age
+        +String role
+        +describe() String
+    }
+    class Student {
+        +String group
+        -Map~String,int~ _grades
+        +Map~String,int~ grades
+        +double averageGrade
+        +addGrade(course, grade) void
+        +String role
+        +describe() String
+    }
+    class Professor {
+        +String department
+        +List~Course~ courses
+        +assignCourse(course) void
+        +String role
+        +describe() String
+    }
+    class Course {
+        +String code
+        +String title
+        +int credits
+        +int capacity
+        +bool isFull
+        +enroll(student) void
+        +unenroll(student) void
+    }
+    class University {
+        -Map~String,Student~ _students
+        -Map~String,Professor~ _professors
+        -Map~String,Course~ _courses
+        +addStudent(student) void
+        +addProfessor(professor) void
+        +addCourse(course) void
+        +findStudent(id) Student
+        +searchStudents(query) List
+        +updateStudentGroup(id, group) void
+        +removeStudent(id) void
+        +removeCourse(code) void
+        +enrollStudent(studentId, courseCode) void
+        +topStudent() Student
+    }
+    Person <|-- Student
+    Person <|-- Professor
+    Course "1" o-- "*" Student : записані
+    Professor "1" o-- "*" Course : веде
+    University "1" *-- "*" Student
+    University "1" *-- "*" Professor
+    University "1" *-- "*" Course
+```
+
+**Зв'язки:** `<|--` наслідування, `o--` агрегація (частина існує окремо), `*--` композиція (частина не існує без цілого).
