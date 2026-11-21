@@ -1,0 +1,20 @@
+STUDENT REPORT
+Records: 8 (skipped: 0)
+Average grade: 82.63
+Median grade: 86.5
+Max: 95, Min: 60
+
+By group:
+  ALK-44: 3 students, avg 85.7
+  ALK-43: 3 students, avg 79.3
+  ALK-42: 2 students, avg 83.0
+
+Top 3:
+  1. Olena Koval (ALK-44) - 95
+  2. Kateryna Moroz (ALK-43) - 93
+  3. Ivan Mitrofaniuk (ALK-44) - 90
+
+Grade distribution:
+  A (90-100): ### 3
+  C (<75): ## 2
+  B (75-89): ### 3
