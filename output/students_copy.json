@@ -1,0 +1,20 @@
+[
+  {
+    "id": "S1",
+    "name": "Olena Koval",
+    "age": 19,
+    "group": "ALK-44"
+  },
+  {
+    "id": "S2",
+    "name": "Petro Shevchenko",
+    "age": 20,
+    "group": "ALK-44"
+  },
+  {
+    "id": "S3",
+    "name": "Anna Melnyk",
+    "age": 19,
+    "group": "ALK-43"
+  }
+]
