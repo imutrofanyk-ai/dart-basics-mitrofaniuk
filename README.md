@@ -60,6 +60,23 @@ dart analyze
 ```
 
 Результат: 31 тест, All tests passed!
+## Підсумок
+
+| Показник | Результат |
+|---|---|
+| Консольних програм | 5 (`bin/task1…task5`) |
+| Модульних тестів | 31, усі проходять (`dart test`) |
+| Аналіз коду | `dart analyze`: 1 навмисне попередження (дублікат елемента у `Set` у `task1_variables.dart`) |
+| Форматування | `dart format` |
+| Async-порівняння | послідовно 3018 мс, `Future.wait` 1006 мс |
+
+### Використані можливості Dart
+- null safety (`?`, `??`, `??=`, `!`), records, `late`, `final`/`const`
+- колекції: `List`, `Set`, `Map`, `where`/`map`/`fold`/`reduce`
+- ООП: інкапсуляція, успадкування (`Person` → `Student`, `Professor`), поліморфізм (`describe()`)
+- асинхронність: `Future`, `Future.wait`, `timeout`, `Stream` (`async*`, `await for`)
+- файли та формати: CSV, JSON (`dart:io`, `dart:convert`)
+- тести: `package:test` (`group`, `setUp`, `expect`)
 
 ## Скріншоти
 ### Завдання 1: типи та змінні
