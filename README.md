@@ -59,10 +59,29 @@ dart format .
 dart analyze
 ```
 
-Результат: `All tests passed!`
+Результат: 31 тест, All tests passed!
 
 ## Скріншоти
+### Завдання 1: типи та змінні
+![task1](screenshots/01_task1_variables.png)
 
+### Завдання 2: функції, калькулятор, аналізатор тексту
+![task2 functions](screenshots/02_task2_functions.png)
+![task2 calculator](screenshots/03_task2_calculator.png)
+![task2 text analyzer](screenshots/04_task2_text_analyzer.png)
+
+### Завдання 3: ООП (університет)
+![task3](screenshots/05_task3_classes.png)
+
+### Завдання 4: колекції та аналіз CSV
+![task4 collections](screenshots/06_task4_collections.png)
+![task4 csv analyzer](screenshots/07_task4_csv_analyzer.png)
+
+### Завдання 5: асинхронність
+![task5](screenshots/08_task5_async.png)
+
+### Результат тестів
+![dart test](screenshots/09_dart_test.png)
 Скріншоти виконання програм знаходяться в папці `screenshots/`.
 
 ## UML-діаграма (завдання 3)
